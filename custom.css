@@ -1,0 +1,46 @@
+/* Кастомные цвета для проекта */
+:root {
+  --bs-primary: #5f7adb;
+  --bs-secondary: #a2b2ee;
+}
+
+/* Анимация появления элементов - нет аналога в Bootstrap */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+/* Кастомные стили для табов */
+.browser-tab {
+  transition: all 0.2s ease-in-out;
+  background-color: var(--bs-white);
+}
+
+.browser-tab:hover {
+  transform: translateY(-2px);
+}
+
+.browser-tab.active {
+  background: var(--bs-primary);
+  color: white;
+}
+
+/* Анимации ховера - нет аналога в Bootstrap */
+.transition-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.transition-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--bs-shadow-lg);
+}
